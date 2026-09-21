@@ -1,4 +1,4 @@
-"""Run the student's explicitly listed files with Icarus; never supply a solution."""
+"""Run the student's explicitly listed FPGA lab files with Icarus."""
 import argparse
 import hashlib
 import json

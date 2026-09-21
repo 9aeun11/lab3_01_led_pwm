@@ -1,19 +1,19 @@
-# FPGA LAB1·LAB2 — 직접 작성하는 프로젝트 틀 (v2.0.1)
+# FPGA LAB1~LAB3 — 직접 작성하는 프로젝트 틀 (v2.0.2)
 
 **프로젝트 하나, workspace 하나입니다.** 모든 실습은 같은 저장소를 새 이름으로 clone하고 PDF를 보며 Verilog·테스트벤치·핀 제약을 직접 작성합니다. 완성 회로와 예시 프로젝트는 들어 있지 않습니다.
 
 ## 1. 새 프로젝트 만들기
 
 ```sh
-git clone --branch v2.0.1 https://github.com/Glaysia/fpga-lab-template.git new_project_name
+git clone --branch v2.0.2 https://github.com/Glaysia/fpga-lab-template.git new_project_name
 cd new_project_name
 git switch -c main
-code LAB1.code-workspace
+code FPGA.code-workspace
 ```
 
-`new_project_name`을 이번 실습 이름으로 바꾸세요. 다음 회로도 같은 URL과 태그를 다른 폴더 이름으로 clone합니다. 태그 clone 직후의 detached HEAD 안내는 정상이며, `git switch -c main`으로 자신의 작업 브랜치를 만듭니다. LAB2도 파일명 `LAB1.code-workspace`를 그대로 사용합니다.
+`new_project_name`을 이번 실습 이름으로 바꾸세요. 다음 회로도 같은 URL과 태그를 다른 폴더 이름으로 clone합니다. 태그 clone 직후의 detached HEAD 안내는 정상이며, `git switch -c main`으로 자신의 작업 브랜치를 만듭니다. LAB1~LAB3은 모두 `FPGA.code-workspace`를 사용합니다.
 
-VS Code 메뉴로 열 때는 **File → New Window → Open Workspace from File... → 방금 만든 폴더의 LAB1.code-workspace**를 선택합니다.
+VS Code 메뉴로 열 때는 **File → New Window → Open Workspace from File... → 방금 만든 폴더의 FPGA.code-workspace**를 선택합니다.
 
 ## 2. 파일 세 개부터 작성하기
 
@@ -86,7 +86,7 @@ VS Code 창을 모두 닫고 다시 연 다음 Terminal → New Terminal에서 `
 
 실제 명령과 사용 파일은 터미널에 표시됩니다. 실행별 `compile.log`·`simulation.log`는 `build/sim/run-.../`, 최근 실행 상태는 `build/sim/result.json`에 남습니다. 실패 시 해당 로그에서 파일·줄을 찾아 수정합니다. 실패한 실행의 파형이 있다면 해당 run 폴더에서 오류 분석용으로 볼 수 있습니다.
 
-터미널에서 직접 실행하려면 Windows에서는 `python tools/lab1.py check`, `python tools/lab1.py simulate`, `python tools/lab1.py wave`를 사용합니다. Linux/macOS에서는 `python3`로 바꿉니다. 긴 TB는 `simulate --timeout 600`처럼 실행 제한(초)을 조정할 수 있습니다.
+터미널에서 직접 실행하려면 Windows에서는 `python tools/fpga_lab.py check`, `python tools/fpga_lab.py simulate`, `python tools/fpga_lab.py wave`를 사용합니다. Linux/macOS에서는 `python3`로 바꿉니다. 긴 TB는 `simulate --timeout 600`처럼 실행 제한(초)을 조정할 수 있습니다.
 
 ## 5. 자신의 소스로 구현하기
 

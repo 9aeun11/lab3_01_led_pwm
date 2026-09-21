@@ -31,7 +31,7 @@
           "command": "python"
         },
         "args": [
-          "tools/lab1.py",
+          "tools/fpga_lab.py",
           "check"
         ],
         "options": {
@@ -56,7 +56,7 @@
           "command": "python"
         },
         "args": [
-          "tools/lab1.py",
+          "tools/fpga_lab.py",
           "simulate"
         ],
         "options": {
@@ -81,7 +81,7 @@
           "command": "python"
         },
         "args": [
-          "tools/lab1.py",
+          "tools/fpga_lab.py",
           "wave"
         ],
         "options": {

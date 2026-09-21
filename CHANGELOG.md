@@ -1,5 +1,13 @@
 # 변경 기록
 
+## v2.0.2 — 2026-09-21
+
+- LAB1~LAB3 공용 템플릿으로 범위를 확장한다.
+- workspace를 `FPGA.code-workspace`, 실행기를 `tools/fpga_lab.py`로 일반화한다.
+- 기존 세 작업과 Icarus 실행 방식, 빈 RTL·TB·XDC 원칙은 유지한다.
+- 여러 RTL 파일, Verilog/SystemVerilog 혼용, 실행 제한 조정 기능을 LAB3에서도 그대로 사용한다.
+- LAB1·LAB2의 재현 가능한 배포 기준은 기존 `v2.0.1` 태그로 보존한다.
+
 ## v2.0.1 — 2026-09-13
 
 - LAB1·LAB2 공통 단일 프로젝트 템플릿. 빈 RTL·TB·XDC와 기존 세 작업을 유지한다.
